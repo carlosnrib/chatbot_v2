@@ -1,0 +1,9 @@
+div.MuiStack-root.css-12hxhao img[style] {
+    max-height: 50px !important;
+}
+
+a[href*='https://github.com/Chainlit/chainlit'] {
+    visibility: hidden;
+}
+
+/* <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1e9n6az" tabindex="0" type="button" aria-label="Copy"> */
