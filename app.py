@@ -167,7 +167,10 @@ async def on_message(message: cl.Message):
         
         check_itens = await verifica_itens(resposta)
         if(check_itens):
-            await check_action_movies_series(resposta)
+            try:
+                await check_action_movies_series(resposta)
 
-            if "música" in resposta.split() or "músicas" in resposta.split() or "músicas:" in resposta.split() or "musicais" in resposta.split() or "musicais:" in resposta.split():
-                await check_action_musics(resposta)
+                if "música" in resposta.split() or "músicas" in resposta.split() or "músicas:" in resposta.split() or "musicais" in resposta.split() or "musicais:" in resposta.split():
+                    await check_action_musics(resposta)
+            except:
+                pass
