@@ -1,6 +1,6 @@
 import chainlit as cl
 from embedchain import App
-from funcoes import text_to_audio, get_movie, verifica_itens, get_itens
+from funcoes import text_to_audio, get_movie, verifica_itens, get_itens, get_itens_bold
 from movie_scrapping import find_movie
 from music_scrapping import find_music
 from unidecode import unidecode
@@ -90,6 +90,9 @@ async def on_action(action):
 @cl.on_message
 async def check_action_movies_series(resposta: str):
     movies = await get_itens(resposta)
+
+    if len(movies) == 0:
+        movies = await get_itens_bold(resposta)
 
     movie_example1 = random.choice(movies)
     movie_example2 = random.choice(movies)

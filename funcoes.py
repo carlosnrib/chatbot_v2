@@ -45,6 +45,11 @@ async def get_itens(mensagem):
     titulos = re.findall(r'(?:Nome do filme|Nome da série|Nome da música): (.+)', mensagem)
     return titulos
 
+async def get_itens_bold(mensagem):
+    padrao = r"\*\*(.*?)\*\*"
+    nomes = re.findall(padrao, mensagem)
+    return nomes
+
 async def verifica_itens(string):
     itens = ['filme', 'filmes', 'série', 'séries', 'música', 'músicas']
     return any(item in string for item in itens)
