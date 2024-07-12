@@ -5,6 +5,8 @@ O seu companheiro virtual para recomendações acessíveis! 🚀
 
 ARIA é o nosso Assistente de Recomendação e Interação Acessível, projetado para tornar a busca e descoberta de recomendações uma experiência inclusiva para todos. 🌐
 
+![Tela Inicial](URL-da-Imagem)
+
 ## Como executar
 
 1. Clone o repositório
