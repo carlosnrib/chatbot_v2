@@ -5,7 +5,7 @@ O seu companheiro virtual para recomendações acessíveis! 🚀
 
 ARIA é o nosso Assistente de Recomendação e Interação Acessível, projetado para tornar a busca e descoberta de recomendações uma experiência inclusiva para todos. 🌐
 
-![Tela Inicial](URL-da-Imagem)
+![Tela Inicial](tela_inicial.png)
 
 ## Como executar
 
@@ -26,6 +26,12 @@ pip install -r requirements.txt
 ```
 chainlit run app.py
 ```
+
+## Exemplo de uso
+
+Para utilizar o ARIA, basta enviar a mensagem desejada. O ARIA responderá prontamente com respostas em texto e áudio.
+
+![Exemplo](exemplo.png)
 
 ## Requisitos
 
